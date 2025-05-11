@@ -1,7 +1,6 @@
 - name: install mongodb and run the service 
   hosts: mongodb 
-  become: yes
-  become_password: yaswanth 
+  become: yes 
   tasks: 
   - name: copy mongo.repo 
     ansible.builtin.copy: 
