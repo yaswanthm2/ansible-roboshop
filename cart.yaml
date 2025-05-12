@@ -2,4 +2,6 @@
   hosts: catalogue 
   become: yes 
   tasks: 
-  - name: 
+  - name: setting nodejs environment
+    ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+    
