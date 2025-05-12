@@ -1,0 +1,5 @@
+- name: installling catalogue service 
+  hosts: catalogue 
+  become: yes 
+  tasks: 
+  - name: 
