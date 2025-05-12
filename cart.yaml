@@ -8,3 +8,10 @@
     ansible.builtin.yum: 
       name: nodejs
       state: installed
+  - name: checking user roboshop exists or not 
+    ansible.builtin.stat:
+      name: roboshop
+      register: output
+  - name: printing output
+    ansible.builtin.debug: 
+      msg: " result of above task: '{{output}}'"
